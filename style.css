@@ -11,8 +11,9 @@ body{
     display: grid;
     place-items: center; 
   }
+
+
   
-    
   .box1 {
     background-color: white;
     width: 260px;
@@ -25,21 +26,23 @@ body{
   
   .row {
     display: grid;
-    gap: 10px 0;
+    gap: 10px; /* Adjust the gap between boxes */
     grid-template-columns: auto auto auto;
-    justify-content: center; 
+    justify-content: center; /* Center the grid horizontally */
   }
   
+  /* Media query for smaller screens */
   @media only screen and (max-width: 768px) {
     .row {
-      grid-template-columns: auto auto; 
-      margin-left: auto; 
-      margin-right: auto; 
+      grid-template-columns: auto auto; /* Change to 2 columns on smaller screens */
+      margin-left: auto; /* Remove left margin to center the grid */
+      margin-right: auto; /* Remove right margin to center the grid */
     }
   }
   
   @media only screen and (max-width: 480px) {
     .row {
-      grid-template-columns: auto; 
+      grid-template-columns: auto; /* Change to 1 column on even smaller screens */
     }
   }
+  
